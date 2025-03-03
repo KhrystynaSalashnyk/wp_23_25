@@ -1,0 +1,14 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-item {
+  margin-bottom: 16px;
+}
+
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 18px;
+}

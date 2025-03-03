@@ -1,0 +1,13 @@
+<h2>Languages</h2>
+<button (click)="toggleLanguages()">
+  {{ showLanguages ? 'Сховати мови' : 'Показати мови' }}
+</button>
+
+<div *ngIf="showLanguages">
+  <ul>
+    <li *ngFor="let lang of languages">
+      {{ lang.name }} - {{ lang.level }}%
+      <app-progress-bar [progress]="lang.level"></app-progress-bar>
+    </li>
+  </ul>
+</div>

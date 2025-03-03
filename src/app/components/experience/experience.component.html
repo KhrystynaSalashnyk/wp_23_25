@@ -1,0 +1,7 @@
+<h2>Job Experience</h2>
+
+<ul *ngIf="showList">
+  <li *ngFor="let exp of experienceList">
+    {{ exp.position }} - {{ exp.company }} ({{ exp.years }})
+  </li>
+</ul>

@@ -1,0 +1,6 @@
+.profile-photo {
+  width: 300px;
+  height: auto;
+  border-radius: 8px; /* або 0, якщо не треба округлень */
+  object-fit: cover; /* красиво обрізає, якщо треба */
+}

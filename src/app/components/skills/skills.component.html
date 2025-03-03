@@ -1,0 +1,13 @@
+<h2>Skills</h2>
+<button (click)="toggleSkills()">
+  {{ showSkills ? 'Сховати навички' : 'Показати навички' }}
+</button>
+
+<div *ngIf="showSkills">
+  <ul>
+    <li *ngFor="let skill of skills">
+      {{ skill.name }} - {{ skill.level }}%
+      <app-progress-bar [progress]="skill.level"></app-progress-bar>
+    </li>
+  </ul>
+</div>
