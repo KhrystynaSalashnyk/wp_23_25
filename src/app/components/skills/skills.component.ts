@@ -1,26 +1,19 @@
 import { Component } from '@angular/core';
-import { NgFor, NgIf } from '@angular/common';
-import { ProgressBarComponent } from '../progress-bar/progress-bar.component';
+import { CommonModule } from '@angular/common';
+import { ProgressBarComponent } from '../../progress-bar/progress-bar.component';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
+  imports: [CommonModule, ProgressBarComponent], // ← додано сюди
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css'],
-  imports: [NgFor, NgIf, ProgressBarComponent]
+  styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-  showSkills = true;
-
   skills = [
-    { name: 'HTML', level: 80 },
-    { name: 'CSS', level: 70 },
-    { name: 'JavaScript', level: 75 },
-    { name: 'Angular', level: 65 }
+    { name: 'Microsoft Word', percent: 90 },
+    { name: 'Web Designing', percent: 80 },
+    { name: 'Graphic Designing', percent: 75 },
+    { name: 'Microsoft PowerPoint', percent: 95 }
   ];
-
-  toggleSkills() {
-    this.showSkills = !this.showSkills;
-  }
 }
-

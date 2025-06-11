@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
-import { NgIf, NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-hobbies',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './hobbies.component.html',
-  styleUrls: ['./hobbies.component.css'],
-  imports: [NgIf, NgFor]
+  styleUrls: ['./hobbies.component.scss']
 })
 export class HobbiesComponent {
-  hobbiesList = ['Writing', 'Reading Books', 'Playing Football', 'Photography', 'Traveling'];
-  showList = true;
+  hobbies = [
+    { icon: '✏️', name: 'Writing' },
+    { icon: '📖', name: 'Reading Books' },
+    { icon: '⚽', name: 'Playing Football' },
+    { icon: '📸', name: 'Photography' },
+    { icon: '✈️', name: 'Traveling' }
+  ];
 }

@@ -1,24 +1,15 @@
 import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-education',
-  standalone: true,
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css'],
-  imports: [NgFor] // додаємо NgFor!
+  standalone: true,
+  imports: [CommonModule]
 })
 export class EducationComponent {
   educationList = [
-    {
-      degree: 'Master of Creative Arts',
-      university: 'University Name',
-      years: '2018–Present'
-    },
-    {
-      degree: 'Bachelor of Arts',
-      university: 'University Name',
-      years: '2014–2018'
-    }
+    { degree: 'B.Sc. in Computer Science', university: 'Stanford University', years: '2010–2014' },
+    { degree: 'M.Sc. in Software Engineering', university: 'MIT', years: '2015–2017' }
   ];
 }
