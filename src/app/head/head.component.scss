@@ -1,0 +1,109 @@
+.head-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.photo-block {
+  position: relative;
+  width: 300px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.text-block {
+  line-height: 1.2;
+}
+
+.name {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.surname {
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.position {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.info-block {
+  flex: 1;
+}
+
+.section-title-box {
+  background-color: black;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 20px 0 10px;
+}.nav-button
+ {
+   border: none;
+   position: relative;
+   height: 40px;
+   width: 40px;
+   left: 1100px;
+   top: 1px;
+   background-color: #121212;
+   .other
+   {
+     width: 40px;
+     height: 40px;
+
+   }
+ }
+
+
+.section-text {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.awards-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.award-item {
+  flex: 1;
+  font-size: 14px;
+}
+
+.award-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.award-company,
+.award-period {
+  font-style: italic;
+  font-size: 13px;
+  color: #555;
+}
+
+.award-description {
+  margin-top: 5px;
+}

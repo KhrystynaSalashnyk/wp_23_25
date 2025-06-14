@@ -1,0 +1,55 @@
+<div class="main">
+  <!-- Ліва колонка: REFERENCES + CONTACT -->
+  <div class="section">
+    <div class="section-title">References</div>
+    <div class="lines">
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div>
+    <div *ngFor="let ref of References" class="content-block">
+      <div class="name">{{ ref.name }}</div>
+      <div class="address">{{ ref.address }}</div>
+      <div class="telephone">Tel: {{ ref.phone }}</div>
+      <div class="email">Email: {{ ref.email }}</div>
+    </div>
+
+    <div class="section-title">Contact Me</div>
+    <div class="contact">
+      <div class="item"><span>Phone:</span> {{ Contact.phone }}</div>
+      <div class="item"><span>Email:</span> {{ Contact.email }}</div>
+      <div class="item"><span>Website:</span> {{ Contact.website }}</div>
+      <div class="item"><span>Address:</span> {{ Contact.address }}</div>
+    </div>
+  </div>
+
+  <!-- Центр: JOB EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Job Experience</div>
+    <div class="lines">
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div>
+    <div *ngFor="let job of JobExperience" class="content-block">
+      <div class="period">{{ job.period }}</div>
+      <div class="position">{{ job.position }}</div>
+      <div class="company">{{ job.company }}</div>
+      <div class="info">{{ job.info }}</div>
+    </div>
+  </div>
+
+  <!-- Права колонка: EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="lines">
+      <div class="line1"></div>
+      <div class="line2"></div>
+    </div>
+    <div *ngFor="let item of Education" class="content-block">
+      <div class="name">{{ item.name }} ({{ item.data }})</div>
+      <div class="university">{{ item.university }}</div>
+      <div class="inform">{{ item.info }}</div>
+    </div>
+  </div>
+</div>
+<app-skills></app-skills>
+<app-hobbies></app-hobbies>
